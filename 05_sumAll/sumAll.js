@@ -1,7 +1,7 @@
 const sumAll = function (firstNum, secondNum) {
   if (
-    typeof firstNum !== "number" ||
-    typeof secondNum !== "number" ||
+    !Number.isInteger(firstNum) ||
+    !Number.isInteger(secondNum) ||
     firstNum < 0 ||
     secondNum < 0
   ) {
